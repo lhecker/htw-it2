@@ -1,0 +1,51 @@
+# *NIX
+*~
+
+# macOS
+*.DS_Store
+._*
+
+# Windows
+Desktop.ini
+Thumbs.db
+
+# Gradle
+/.gradle
+/build
+
+# Eclipse
+/*.classpath
+/*.project
+/*.settings
+
+# IDEA
+/.idea
+/out
+/*.iml
+/*.ipr
+/*.iws
+
+# LaTeX
+/docs/*.aux
+/docs/*.lof
+/docs/*.log
+/docs/*.lot
+/docs/*.fls
+/docs/*.out
+/docs/*.toc
+/docs/*.fmt
+/docs/*.fot
+/docs/*.cb
+/docs/*.cb2
+/docs/*.bbl
+/docs/*.bcf
+/docs/*.blg
+/docs/*-blx.aux
+/docs/*-blx.bib
+/docs/*.run.xml
+/docs/*.fdb_latexmk
+/docs/*.synctex
+/docs/*.synctex(busy)
+/docs/*.synctex.gz
+/docs/*.synctex.gz(busy)
+/docs/*.pdfsync
