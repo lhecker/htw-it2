@@ -25,17 +25,17 @@ class App {
     @Option(names = {"-a", "--address"}, paramLabel = "<ip:port>", description = "The address to connect to")
     private InetSocketAddress m_address = new InetSocketAddress("127.0.0.1", DEFAULT_PORT);
     @Option(names = {"-s", "--server"})
-    private boolean m_server;
+    private boolean m_server = false;
     @Option(names = {"-l", "--loss"}, paramLabel = "<loss>", description = "The artificial packet loss to add (within [0,1])")
-    private double m_loss;
+    private double m_loss = 0;
     @Option(names = {"-f", "--fec"}, paramLabel = "<size>", description = "Enable FEC with the given payload size (within [2,16])")
-    private int m_fec;
+    private int m_fec = 0;
     @Option(names = "-v", description = "-v, -vv, -vvv, or -vvvv for INFO, DEBUG, TRACE or ALL logging level")
-    private boolean[] m_verbosity;
+    private boolean[] m_verbosity = {};
     @Option(names = {"-V", "--version"}, versionHelp = true, description = "Display version info")
-    private boolean m_versionInfoRequested;
+    private boolean m_versionInfoRequested = false;
     @Option(names = {"-h", "--help"}, usageHelp = true, description = "Display this help message")
-    private boolean m_usageHelpRequested;
+    private boolean m_usageHelpRequested = false;
 
     public static void main(String... args) throws Exception {
         App app = new App();
